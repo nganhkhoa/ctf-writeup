@@ -1,0 +1,263 @@
+getinput V:Ulw>*FcK:qyd;!U+w
+create_vector<int> vector<int>_input
+c}yFI;uoV[-LUk]u/LHYP=|/D` vector<int>_input V:Ulw>*FcK:qyd;!U+w
+sizeof vector<int>_input size_of_input
+compare_op size_of_input != 38
+   exit 0
+end
+mov variable3 0x0
+mov variable6 0
+for_true variable6 < size_of_input
+    mov variable9 variable6
+    modulo variable9 32
+    assign_to_3 vector<int>_input variable6 variable4
+    shift_left variable4 variable9
+    xor variable3 variable4
+    plus_one variable6
+end_for
+compare_op variable3 != 0x966a35fa
+   exit 0
+end
+mov variable1 0x61
+xor variable1 0x15
+assign_to_3 vector<int>_input 2 variable4
+compare_op variable1 != variable4
+    exit 0
+end
+mov variable1 0x6c
+xor variable1 0x05
+assign_to_3 vector<int>_input 1 variable4
+compare_op variable1 != variable4
+    exit 0
+end
+mov variable1 0x67
+xor variable1 0x05
+assign_to_3 vector<int>_input 3 variable4
+compare_op variable1 != variable4
+    exit 0
+end
+mov variable1 0x28
+xor variable1 0x55
+assign_to_3 vector<int>_input 37 variable4
+compare_op variable1 != variable4
+    exit 0
+end
+mov variable1 0x66
+xor variable1 0x0e
+assign_to_3 vector<int>_input 0 variable4
+compare_op variable1 != variable4
+    exit 0
+end
+mov variable1 0x3a
+xor variable1 0x41
+assign_to_3 vector<int>_input 4 variable4
+compare_op variable1 != variable4
+    exit 0
+end
+create_vector<int> vector_1
+mov variable6 5
+for_true variable6 < 21
+    assign_to_3 vector<int>_input variable6 variable4
+    push_to_vector vector_1 variable4
+    plus_one variable6
+end_for
+assign_to_3 vector<int>_input 3 variable15
+assign_to_3 vector<int>_input 1 variable4
+shift_left variable4 16
+xor variable15 variable4
+assign_to_3 vector<int>_input 0 variable4
+shift_left variable4 24
+xor variable15 variable4
+assign_to_3 vector<int>_input 2 variable4
+shift_left variable4 8
+xor variable15 variable4
+random variable15
+mov variable7 0
+for_true variable7 < 125
+    mov variable8 0
+    for_true variable8 < 16
+        create_vector<int> vector_2
+        random_vector vector_2
+        assign_to_3 vector_1 variable8 variable10
+        assign_to_3 vector_2 3 variable11
+        xor variable10 variable11
+        assign_to_vector vector_1 variable8 variable10
+        plus_one variable8
+    end_for
+    mov variable8 1
+    for_true variable8 < 16
+        mov variable16 variable8
+        sub variable16 1
+        assign_to_3 vector_1 variable8 variable10
+        assign_to_3 vector_1 variable16 variable17
+        xor variable10 variable17
+        assign_to_vector vector_1 variable8 variable10
+        plus_one variable8
+    end_for
+    plus_one variable7
+end_for
+create_vector<int> vector<int>_y
+push_to_vector vector<int>_y 0x91
+push_to_vector vector<int>_y 0x42
+push_to_vector vector<int>_y 0xdb
+push_to_vector vector<int>_y 0x3f
+push_to_vector vector<int>_y 0xfa
+push_to_vector vector<int>_y 0x17
+push_to_vector vector<int>_y 0x80
+push_to_vector vector<int>_y 0xff
+push_to_vector vector<int>_y 0x8d
+push_to_vector vector<int>_y 0x75
+push_to_vector vector<int>_y 0x88
+push_to_vector vector<int>_y 0x25
+push_to_vector vector<int>_y 0xaf
+push_to_vector vector<int>_y 0x96
+push_to_vector vector<int>_y 0x64
+push_to_vector vector<int>_y 0x63
+mov variable20 0
+mov variable8 0
+for_true variable8 < 16
+    assign_to_3 vector_1 variable8 variable18
+    assign_to_3 vector<int>_y variable8 variable19
+    compare_op variable18 == variable19
+        plus_one variable20
+    end
+    plus_one variable8
+end_for
+compare_op variable20 != 16
+    exit 0
+end
+assign_to_3 vector<int>_input 34 variable5
+assign_to_3 vector<int>_input 31 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 24 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 27 variable21
+xor variable5 variable21
+compare_op variable5 != 88
+    exit 0
+end
+assign_to_3 vector<int>_input 25 variable5
+assign_to_3 vector<int>_input 26 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 32 variable21
+xor variable5 variable21
+compare_op variable5 != 101
+    exit 0
+end
+assign_to_3 vector<int>_input 36 variable5
+assign_to_3 vector<int>_input 25 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 29 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 21 variable21
+xor variable5 variable21
+compare_op variable5 != 84
+    exit 0
+end
+assign_to_3 vector<int>_input 28 variable5
+assign_to_3 vector<int>_input 24 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 23 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 27 variable21
+xor variable5 variable21
+compare_op variable5 != 7
+    exit 0
+end
+assign_to_3 vector<int>_input 29 variable5
+assign_to_3 vector<int>_input 31 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 35 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 36 variable21
+xor variable5 variable21
+compare_op variable5 != 1
+    exit 0
+end
+assign_to_3 vector<int>_input 36 variable5
+assign_to_3 vector<int>_input 31 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 32 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 33 variable21
+xor variable5 variable21
+compare_op variable5 != 10
+    exit 0
+end
+assign_to_3 vector<int>_input 26 variable5
+assign_to_3 vector<int>_input 14 variable21
+compare_op variable5 != variable21
+    exit 0
+end
+assign_to_3 vector<int>_input 30 variable5
+assign_to_3 vector<int>_input 32 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 26 variable21
+xor variable5 variable21
+compare_op variable5 != 50
+    exit 0
+end
+assign_to_3 vector<int>_input 36 variable5
+assign_to_3 vector<int>_input 33 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 22 variable21
+xor variable5 variable21
+compare_op variable5 != 62
+    exit 0
+end
+assign_to_3 vector<int>_input 30 variable5
+assign_to_3 vector<int>_input 23 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 27 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 34 variable21
+xor variable5 variable21
+compare_op variable5 != 81
+    exit 0
+end
+assign_to_3 vector<int>_input 24 variable5
+assign_to_3 vector<int>_input 33 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 23 variable21
+xor variable5 variable21
+compare_op variable5 != 54
+    exit 0
+end
+assign_to_3 vector<int>_input 32 variable5
+assign_to_3 vector<int>_input 30 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 34 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 21 variable21
+xor variable5 variable21
+compare_op variable5 != 83
+    exit 0
+end
+assign_to_3 vector<int>_input 28 variable5
+assign_to_3 vector<int>_input 26 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 21 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 22 variable21
+xor variable5 variable21
+compare_op variable5 != 10
+    exit 0
+end
+assign_to_3 vector<int>_input 35 variable5
+assign_to_3 vector<int>_input 26 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 29 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 34 variable21
+xor variable5 variable21
+compare_op variable5 != 86
+    exit 0
+end
+assign_to_3 vector<int>_input 36 variable5
+assign_to_3 vector<int>_input 27 variable21
+xor variable5 variable21
+assign_to_3 vector<int>_input 33 variable21
+xor variable5 variable21
+compare_op variable5 != 62
+    exit 0
+end

@@ -1,0 +1,135 @@
+$ r2 sweep                                                                                                                                                                                     2345ms
+ -- I did it for the pwnz.
+[0x08049050]> iI
+arch     x86
+baddr    0x8048000
+binsz    14345
+bintype  elf
+bits     32
+canary   false
+class    ELF32
+compiler GCC: (GNU) 9.1.0
+crypto   false
+endian   little
+havecode true
+intrp    /lib/ld-linux.so.2
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  Intel 80386
+maxopsz  16
+minopsz  1
+nx       false
+os       linux
+pcalign  0
+pic      false
+relocs   true
+relro    partial
+rpath    NONE
+sanitiz  false
+static   false
+stripped false
+subsys   linux
+va       true
+
+[0x08049050]> aa
+[x] Analyze all flags starting with sym. and entry0 (aa)
+[0x08049050]> afi main
+#
+offset: 0x08049166
+name: main
+size: 140
+is-pure: false
+realsz: 137
+stackframe: 24
+call-convention: cdecl
+cyclomatic-cost : 52
+cyclomatic-complexity: 2
+bits: 32
+type: sym [NEW]
+num-bbs: 7
+edges: 7
+end-bbs: 1
+call-refs: 0x08049187 J 0x080491d7 J 0x080491d2 J 0x080491e1 J
+data-refs: 0x0804c040
+code-xrefs: 0x08049184 J 0x080491cf J 0x0804918f J 0x080491de J
+in-degree: 4
+out-degree: 0
+data-xrefs: 0x0804907a 0x08049080
+locals: 5
+args: 0
+var int32_t var_4h @ ebp-0x4
+var int32_t var_5h @ esp+0x5
+var int32_t var_9h @ esp+0x9
+var int32_t var_bh @ esp+0xb
+var int32_t var_ch @ esp+0xc
+diff: type: new
+[0x08049050]> af- main
+[0x08049050]> pD 137@main
+            ;-- main:
+            0x08049166      55                     push ebp
+            0x08049167      89e5                   mov ebp, esp
+            0x08049169      53                     push ebx
+            0x0804916a      83e4f0                 and esp, 0xfffffff0
+            0x0804916d      83ec10                 sub esp, 0x10
+            0x08049170      c74424050aff0dee       mov dword [esp + 5], 0xee0dff0a
+            0x08049178      66c74424098903         mov word [esp + 9], 0x389
+            0x0804917f      c644240b00             mov byte [esp + 0xb], 0
+        ,=< 0x08049184      eb01                   jmp 0x8049187
+        |   0x08049186      d3c7                   rol edi, cl
+            0x08049188      44                     inc esp
+            0x08049189      240c                   and al, 0xc
+            0x0804918b      0000                   add byte [eax], al
+            0x0804918d      0000                   add byte [eax], al
+        ,=< 0x0804918f      eb46                   jmp 0x80491d7
+       .--> 0x08049191      8b44240c               mov eax, dword [esp + 0xc]
+       :|   0x08049195      0540c00408             add eax, 0x804c040
+       :|   0x0804919a      0fb618                 movzx ebx, byte [eax]
+       :|   0x0804919d      8b4c240c               mov ecx, dword [esp + 0xc]
+       :|   0x080491a1      baabaaaa2a             mov edx, 0x2aaaaaab
+       :|   0x080491a6      89c8                   mov eax, ecx
+       :|   0x080491a8      f7ea                   imul edx
+       :|   0x080491aa      89c8                   mov eax, ecx
+       :|   0x080491ac      c1f81f                 sar eax, 0x1f
+       :|   0x080491af      29c2                   sub edx, eax
+       :|   0x080491b1      89d0                   mov eax, edx
+       :|   0x080491b3      01c0                   add eax, eax
+       :|   0x080491b5      01d0                   add eax, edx
+       :|   0x080491b7      01c0                   add eax, eax
+       :|   0x080491b9      29c1                   sub ecx, eax
+       :|   0x080491bb      89ca                   mov edx, ecx
+       :|   0x080491bd      0fb6541405             movzx edx, byte [esp + edx + 5]
+       :|   0x080491c2      8b44240c               mov eax, dword [esp + 0xc]
+       :|   0x080491c6      0540c00408             add eax, 0x804c040
+       :|   0x080491cb      31da                   xor edx, ebx
+       :|   0x080491cd      8810                   mov byte [eax], dl
+      ,===< 0x080491cf      eb01                   jmp 0x80491d2
+      |:|   0x080491d1      a18344240c             mov eax, dword [0xc244483]
+       :|   0x080491d6      01837c240c51           add dword [ebx + 0x510c247c], eax
+       `==< 0x080491dc      7eb3                   jle 0x8049191
+        ,=< 0x080491de      eb01                   jmp 0x80491e1
+        |   0x080491e0      68b840c004             push 0x4c040b8
+            0x080491e5      08ff                   or bh, bh
+            0x080491e7      d0b800000000           sar byte [eax], 1
+            0x080491ed      8b                     invalid
+            0x080491ee      5d                     pop ebp
+[0x08049050]> px 256@0x804c000
+- offset -   0 1  2 3  4 5  6 7  8 9  A B  C D  E F  0123456789ABCDEF
+0x0804c000  0cbf 0408 0000 0000 0000 0000 4690 0408  ............F...
+0x0804c010  0000 0000 0000 0000 0000 0000 0000 0000  ................
+0x0804c020  0000 0000 0000 0000 0000 0000 0000 0000  ................
+0x0804c030  0000 0000 0000 0000 0000 0000 0000 0000  ................
+0x0804c040  e1da 3c27 3825 50ad 8ddc be41 e805 3c2e  ..<'8%P....A..<.
+0x0804c050  3907 3b24 beef d032 d84d 2b23 0932 ca4f  9.;$...2.M+#.2.O
+0x0804c060  0cdf 52b0 0b32 8d06 5ffc f500 52b0 ca56  ..R..2.._...R..V
+0x0804c070  46ad 5eeb 8600 0bfa 08eb 8602 0efd 09bf  F.^.............
+0x0804c080  8f01 0eac 08bd 890d 5cfc 0cba 8a57 09fe  ........\....W..
+0x0804c090  0ea4 0000 ffff ffff ffff ffff ffff ffff  ................
+0x0804c0a0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x0804c0b0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x0804c0c0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x0804c0d0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x0804c0e0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+0x0804c0f0  ffff ffff ffff ffff ffff ffff ffff ffff  ................
+[0x08049050]>
