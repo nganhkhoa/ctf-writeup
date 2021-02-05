@@ -1,0 +1,36 @@
+import olefile
+
+ole = olefile.OleFileIO('report.xls')
+print(ole.listdir())
+
+text = ole.openstream(['_VBA_PROJECT_CUR', 'F', 'o'])
+data = text.read()
+
+def abc(s):
+    x = ''
+    for i in range(len(s) // 4):
+        x += chr(int(s[i*4 : i*4+2], 16) - int(s[i*4+2 : i*4+4], 16))
+    return x
+
+s = '9655B040B64667238524D15D6201.B95D4E01C55CC562C7557405A532D768C55FA12DD074DC697A06E172992CAF3F8A5C7306B7476B38.C555AC40A7469C234424.853FA85C470699477D3851249A4B9C4E.A855AF40B84695239D24895D2101D05CCA62BE5578055232D568C05F902DDC74D2697406D7724C2CA83FCF5C2606B547A73898246B4BC14E941F9121D464D263B947EB77D36E7F1B8254.853FA85C470699477D3851249A4B9C4E.9A55B240B84692239624.CC55A940B44690238B24CA5D7501CF5C9C62B15561056032C468D15F9C2DE374DD696206B572752C8C3FB25C3806.A8558540924668236724B15D2101AA5CC362C2556A055232AE68B15F7C2DC17489695D06DB729A2C723F8E5C65069747AA389324AE4BB34E921F9421.CB55A240B5469B23.AC559340A94695238D24CD5D75018A5CB062BA557905A932D768D15F982D.D074B6696F06D5729E2CAE3FCF5C7506AD47AC388024C14B7C4E8F1F8F21CB64'
+for i, ss in enumerate(map(abc, s.split('.'))):
+    print(i, ss)
+
+head = len('\x00\x02\xe4\x02(\x00\x00\x00\xd3\x02\x00\x80')
+start = head + len(s) + 65
+size = 0x5c21 * 4 | 0x100000 # LitDI4 0x5C21 0x0004
+
+data = data[start:start + size]
+
+key = "FLARE-ON"
+buff = [0 for _ in range(len(key))]
+for i in range(len(key)):
+    buff[len(key) - i - 1] = ord(key[i])
+
+out = []
+for i in range(size // 4):
+    out += [ int(data[ i*4+2 : i*4+2+2 ], 16) ^ buff[i % len(buff)] ]
+
+print(len(out))
+print(''.join(map(chr, out[:4])))
+open('out.png', 'wb').write(bytearray(out))

@@ -1,0 +1,727 @@
+Processing file: report.xls
+===============================================================================
+dir stream: _VBA_PROJECT_CUR/VBA/dir
+-------------------------------------------------------------------------------
+dir stream after decompression:
+1257 bytes
+dir stream parsed:
+00000000:  PROJ_SYSKIND:
+00000000   01 00 00 00                                        ....
+
+0000000A:  PROJ_LCID:
+00000000   09 04 00 00                                        ....
+
+00000014:  PROJ_LCIDINVOKE:
+00000000   09 04 00 00                                        ....
+
+0000001E:  PROJ_CODEPAGE:
+00000000   E4 04                                              ..
+
+00000026:  PROJ_NAME:
+00000000   56 42 41 50 72 6F 6A 65 63 74                      VBAProject
+
+00000036:  PROJ_DOCSTRING
+0000003C:  PROJ_UNICODE_DOCSTRING
+00000042:  PROJ_HELPFILE
+00000048:  PROJ_UNICODE_HELPFILE
+0000004E:  PROJ_HELPCONTEXT:
+00000000   00 00 00 00                                        ....
+
+00000058:  PROJ_LIBFLAGS:
+00000000   00 00 00 00                                        ....
+
+00000062:  PROJ_VERSION:
+00000000   93 5A 08 61 2D 00                                  .Z.a-.
+
+0000006E:  PROJ_CONSTANTS
+00000074:  PROJ_UNICODE_CONSTANTS
+0000007A:  PROJ_REFNAME_PROJ:
+00000000   73 74 64 6F 6C 65                                  stdole
+
+00000086:  PROJ_UNICODE_REFNAME_PROJ:
+00000000   73 00 74 00 64 00 6F 00 6C 00 65 00                s.t.d.o.l.e.
+
+00000098:  PROJ_LIBID_REGISTERED:
+00000000   5E 00 00 00 2A 5C 47 7B 30 30 30 32 30 34 33 30    ^...*\G{00020430
+00000010   2D 30 30 30 30 2D 30 30 30 30 2D 43 30 30 30 2D    -0000-0000-C000-
+00000020   30 30 30 30 30 30 30 30 30 30 34 36 7D 23 32 2E    000000000046}#2.
+00000030   30 23 30 23 43 3A 5C 57 69 6E 64 6F 77 73 5C 53    0#0#C:\Windows\S
+00000040   79 73 57 4F 57 36 34 5C 73 74 64 6F 6C 65 32 2E    ysWOW64\stdole2.
+00000050   74 6C 62 23 4F 4C 45 20 41 75 74 6F 6D 61 74 69    tlb#OLE Automati
+00000060   6F 6E 00 00 00 00 00 00                            on......
+
+00000106:  PROJ_REFNAME_PROJ:
+00000000   4F 66 66 69 63 65                                  Office
+
+00000112:  PROJ_UNICODE_REFNAME_PROJ:
+00000000   4F 00 66 00 66 00 69 00 63 00 65 00                O.f.f.i.c.e.
+
+00000124:  PROJ_LIBID_REGISTERED:
+00000000   9A 00 00 00 2A 5C 47 7B 32 44 46 38 44 30 34 43    ....*\G{2DF8D04C
+00000010   2D 35 42 46 41 2D 31 30 31 42 2D 42 44 45 35 2D    -5BFA-101B-BDE5-
+00000020   30 30 41 41 30 30 34 34 44 45 35 32 7D 23 32 2E    00AA0044DE52}#2.
+00000030   30 23 30 23 43 3A 5C 50 72 6F 67 72 61 6D 20 46    0#0#C:\Program F
+00000040   69 6C 65 73 20 28 78 38 36 29 5C 43 6F 6D 6D 6F    iles (x86)\Commo
+00000050   6E 20 46 69 6C 65 73 5C 4D 69 63 72 6F 73 6F 66    n Files\Microsof
+00000060   74 20 53 68 61 72 65 64 5C 4F 46 46 49 43 45 31    t Shared\OFFICE1
+00000070   36 5C 4D 53 4F 2E 44 4C 4C 23 4D 69 63 72 6F 73    6\MSO.DLL#Micros
+00000080   6F 66 74 20 4F 66 66 69 63 65 20 31 36 2E 30 20    oft Office 16.0
+00000090   4F 62 6A 65 63 74 20 4C 69 62 72 61 72 79 00 00    Object Library..
+000000A0   00 00 00 00                                        ....
+
+000001CE:  PROJ_REFNAME_PROJ:
+00000000   4D 53 46 6F 72 6D 73                               MSForms
+
+000001DB:  PROJ_UNICODE_REFNAME_PROJ:
+00000000   4D 00 53 00 46 00 6F 00 72 00 6D 00 73 00          M.S.F.o.r.m.s.
+
+000001EF:  UNKNOWN:
+00000000   2A 5C 47 7B 30 44 34 35 32 45 45 31 2D 45 30 38    *\G{0D452EE1-E08
+00000010   46 2D 31 30 31 41 2D 38 35 32 45 2D 30 32 36 30    F-101A-852E-0260
+00000020   38 43 34 44 30 42 42 34 7D 23 32 2E 30 23 30 23    8C4D0BB4}#2.0#0#
+00000030   43 3A 5C 57 49 4E 44 4F 57 53 5C 53 79 73 57 4F    C:\WINDOWS\SysWO
+00000040   57 36 34 5C 46 4D 32 30 2E 44 4C 4C 23 4D 69 63    W64\FM20.DLL#Mic
+00000050   72 6F 73 6F 66 74 20 46 6F 72 6D 73 20 32 2E 30    rosoft Forms 2.0
+00000060   20 4F 62 6A 65 63 74 20 4C 69 62 72 61 72 79        Object Library
+
+00000264:  PROJ_LIBID_TWIDDLED:
+00000000   31 00 00 00 2A 5C 47 7B 30 30 30 30 30 30 30 30    1...*\G{00000000
+00000010   2D 30 30 30 30 2D 30 30 30 30 2D 30 30 30 30 2D    -0000-0000-0000-
+00000020   30 30 30 30 30 30 30 30 30 30 30 30 7D 23 30 2E    000000000000}#0.
+00000030   30 23 30 23 23 00 00 00 00 00 00                   0#0##......
+
+000002A5:  PROJ_REFNAME_PROJ:
+00000000   4D 53 46 6F 72 6D 73                               MSForms
+
+000002B2:  PROJ_UNICODE_REFNAME_PROJ:
+00000000   4D 00 53 00 46 00 6F 00 72 00 6D 00 73 00          M.S.F.o.r.m.s.
+
+000002C6:  PROJ_LIBID_EXTENDED:
+00000000   8D 00 00 00 2A 5C 47 7B 32 31 42 39 39 36 45 39    ....*\G{21B996E9
+00000010   2D 33 44 44 44 2D 34 31 34 39 2D 41 32 31 34 2D    -3DDD-4149-A214-
+00000020   44 36 38 42 42 31 34 35 39 41 35 39 7D 23 32 2E    D68BB1459A59}#2.
+00000030   30 23 30 23 43 3A 5C 55 73 65 72 73 5C 4D 4F 52    0#0#C:\Users\MOR
+00000040   49 54 5A 7E 31 2E 52 41 41 5C 41 70 70 44 61 74    ITZ~1.RAA\AppDat
+00000050   61 5C 4C 6F 63 61 6C 5C 54 65 6D 70 5C 31 5C 56    a\Local\Temp\1\V
+00000060   42 45 5C 4D 53 46 6F 72 6D 73 2E 65 78 64 23 4D    BE\MSForms.exd#M
+00000070   69 63 72 6F 73 6F 66 74 20 46 6F 72 6D 73 20 32    icrosoft Forms 2
+00000080   2E 30 20 4F 62 6A 65 63 74 20 4C 69 62 72 61 72    .0 Object Librar
+00000090   79 00 00 00 00 00 00 E1 2E 45 0D 8F E0 1A 10 85    y........E......
+000000A0   2E 02 60 8C 4D 0B B4 01 00 00 00                   ..`.M......
+
+00000377:  PROJ_MODULECOUNT:
+00000000   03 00                                              ..
+
+0000037F:  PROJ_COOKIE:
+00000000   39 33                                              93
+
+00000387:  MOD_NAME:
+00000000   54 68 69 73 57 6F 72 6B 62 6F 6F 6B                ThisWorkbook
+
+00000399:  MOD_UNICODE_NAME:
+00000000   54 00 68 00 69 00 73 00 57 00 6F 00 72 00 6B 00    T.h.i.s.W.o.r.k.
+00000010   62 00 6F 00 6F 00 6B 00                            b.o.o.k.
+
+000003B7:  MOD_STREAM:
+00000000   54 68 69 73 57 6F 72 6B 62 6F 6F 6B                ThisWorkbook
+
+000003C9:  MOD_UNICODESTREAM:
+00000000   54 00 68 00 69 00 73 00 57 00 6F 00 72 00 6B 00    T.h.i.s.W.o.r.k.
+00000010   62 00 6F 00 6F 00 6B 00                            b.o.o.k.
+
+000003E7:  MOD_DOCSTRING
+000003ED:  MOD_UNICODE_DOCSTRING
+000003F3:  MOD_TEXTOFFSET:
+00000000   0D 06 00 00                                        ....
+
+000003FD:  MOD_HELPCONTEXT:
+00000000   00 00 00 00                                        ....
+
+00000407:  MOD_COOKIETYPE:
+00000000   DB 84                                              ..
+
+0000040F:  MOD_FBASMOD_Classes
+00000415:  MOD_END
+0000041B:  MOD_NAME:
+00000000   53 68 65 65 74 31                                  Sheet1
+
+00000427:  MOD_UNICODE_NAME:
+00000000   53 00 68 00 65 00 65 00 74 00 31 00                S.h.e.e.t.1.
+
+00000439:  MOD_STREAM:
+00000000   53 68 65 65 74 31                                  Sheet1
+
+00000445:  MOD_UNICODESTREAM:
+00000000   53 00 68 00 65 00 65 00 74 00 31 00                S.h.e.e.t.1.
+
+00000457:  MOD_DOCSTRING
+0000045D:  MOD_UNICODE_DOCSTRING
+00000463:  MOD_TEXTOFFSET:
+00000000   E2 23 00 00                                        .#..
+
+0000046D:  MOD_HELPCONTEXT:
+00000000   00 00 00 00                                        ....
+
+00000477:  MOD_COOKIETYPE:
+00000000   9F F9                                              ..
+
+0000047F:  MOD_FBASMOD_Classes
+00000485:  MOD_END
+0000048B:  MOD_NAME:
+00000000   46                                                 F
+
+00000492:  MOD_UNICODE_NAME:
+00000000   46 00                                              F.
+
+0000049A:  MOD_STREAM:
+00000000   46                                                 F
+
+000004A1:  MOD_UNICODESTREAM:
+00000000   46 00                                              F.
+
+000004A9:  MOD_DOCSTRING
+000004AF:  MOD_UNICODE_DOCSTRING
+000004B5:  MOD_TEXTOFFSET:
+00000000   8E 04 00 00                                        ....
+
+000004BF:  MOD_HELPCONTEXT:
+00000000   00 00 00 00                                        ....
+
+000004C9:  MOD_COOKIETYPE:
+00000000   98 74                                              .t
+
+000004D1:  MOD_FBASMOD_Classes
+000004D7:  MOD_FBASMOD_Private
+000004DD:  MOD_END
+000004E3:  PROJ_EOF
+-------------------------------------------------------------------------------
+_VBA_PROJECT stream:
+4327 bytes
+Identifiers:
+
+0000: Excel
+0001: VBA
+0002: Win16
+0003: Win32
+0004: Win64
+0005: Mac
+0006: VBA6
+0007: VBA7
+0008: VBAProject
+0009: stdole
+000A: Office
+000B: MSForms
+000C: ThisWorkbook
+000D: _Evaluate
+000E: Workbook_Open
+000F: Sheet1
+0010: folderol
+0011: Auto_Open
+0012: InternetGetConnectedState
+0013: dwflags
+0014: dwReserved
+0015: wininet.dll
+0016: mciSendString
+0017: lpstrCommand
+0018: lpstrReturnString
+0019: uReturnLength
+001A: hwndCallback
+001B: winmm.dll
+001C: GetShortPathName
+001D: lpszLongPath
+001E: lpszShortPath
+001F: lBuffer
+0020: kernel32
+0021: GetInternetConnectedState
+0022: rigmarole
+0023: es
+0024: furphy
+0025: c
+0026: s
+0027: cc
+0028: i
+0029: Chr
+002A: wabbit
+002B: fn
+002C: onzo
+002D: mf
+002E: xertz
+002F: buff
+0030: Split
+0031: L
+0032: MsgBox
+0033: vbCritical
+0034: fudgel
+0035: GetObject
+0036: twattling
+0037: ExecQuery
+0038: p
+0039: pos
+003A: LCase
+003B: groke
+003C: CreateObject
+003D: firkin
+003E: UserDomain
+003F: n
+0040: Asc
+0041: a
+0042: canoodle
+0043: T
+0044: Environ
+0045: panuding
+0046: Shapes
+0047: AddPicture
+0048: panjandrum
+0049: ardylo
+004A: bibble
+004B: quean
+004C: cattywampus
+004D: kerfuffle
+004E: Workbook
+004F: Worksheet
+0050: UserForm
+0051: Caption
+0052: _B_var_fudgel
+0053: _B_var_twattling
+0054: _B_var_p
+0055: _B_var_LCase
+0056: _B_var_groke
+0057: _B_var_firkin
+0058: _B_var_n
+0059: _B_var_i
+005A: _B_str_Mid
+005B: _B_var_Chr
+005C: _B_var_a
+005D: _B_var_Environ
+005E: _B_var_panuding
+005F: _B_var_Mid
+
+_VBA_PROJECT parsing done.
+-------------------------------------------------------------------------------
+Module streams:
+_VBA_PROJECT_CUR/VBA/ThisWorkbook - 1785 bytes
+Line #0:
+	FuncDefn (Sub Workbook_Open())
+Line #1:
+	Ld Sheet1
+	ArgsMemCall folderol 0x0000
+Line #2:
+	EndSub
+Line #3:
+Line #4:
+	FuncDefn (Sub Auto_Open())
+Line #5:
+	Ld Sheet1
+	ArgsMemCall folderol 0x0000
+Line #6:
+	EndSub
+_VBA_PROJECT_CUR/VBA/Sheet1 - 10518 bytes
+Line #0:
+	LineCont 0x0004 06 00 00 00
+	FuncDefn (Private Declare Function InternetGetConnectedState Lib "wininet.dll" (ByRef dwflags As Long, ByVal dwReserved As Long) As Long)
+Line #1:
+Line #2:
+	LineCont 0x000C 08 00 03 00 10 00 03 00 1A 00 03 00
+	FuncDefn (Private Declare PtrSafe Function mciSendString Lib "winmm.dll" (ByVal lpstrCommand As String, ByVal lpstrReturnString As , ByVal uReturnLength As Long, ByVal hwndCallback As Long) As Long)
+Line #3:
+Line #4:
+	LineCont 0x0004 08 00 04 00
+	FuncDefn (Private Declare Function GetShortPathName Lib "kernel32" (ByVal lpszLongPath As String, ByVal lpszShortPath As String, ByVal lBuffer As Long) As Long)
+Line #5:
+Line #6:
+	FuncDefn (Public Function GetInternetConnectedState(id_FFFE As Boolean) As Boolean)
+Line #7:
+	LitDI4 0x0000 0x0000
+	LitDI4 0x0000 0x0000
+	ArgsLd InternetGetConnectedState 0x0002
+	St GetInternetConnectedState
+Line #8:
+	EndFunc
+Line #9:
+Line #10:
+	FuncDefn (Function rigmarole(es As String, id_FFFE As String) As String)
+Line #11:
+	Dim
+	VarDefn furphy (As String)
+Line #12:
+	Dim
+	VarDefn c (As Integer)
+Line #13:
+	Dim
+	VarDefn s (As String)
+Line #14:
+	Dim
+	VarDefn cc (As Integer)
+Line #15:
+	LitStr 0x0000 ""
+	St furphy
+Line #16:
+	StartForVariable
+	Ld i
+	EndForVariable
+	LitDI2 0x0001
+	Ld es
+	FnLen
+	LitDI2 0x0004
+	ForStep
+Line #17:
+	LitStr 0x0002 "&H"
+	Ld es
+	Ld i
+	LitDI2 0x0002
+	ArgsLd Mid 0x0003
+	Concat
+	ArgsLd CDec 0x0001
+	St c
+Line #18:
+	LitStr 0x0002 "&H"
+	Ld es
+	Ld i
+	LitDI2 0x0002
+	Add
+	LitDI2 0x0002
+	ArgsLd Mid 0x0003
+	Concat
+	ArgsLd CDec 0x0001
+	St s
+Line #19:
+	Ld c
+	Ld s
+	Sub
+	St cc
+Line #20:
+	Ld furphy
+	Ld cc
+	ArgsLd Chr 0x0001
+	Add
+	St furphy
+Line #21:
+	StartForVariable
+	Ld i
+	EndForVariable
+	NextVar
+Line #22:
+	Ld furphy
+	St rigmarole
+Line #23:
+	EndFunc
+Line #24:
+Line #25:
+	FuncDefn (Function folderol(id_FFFE As Variant))
+Line #26:
+	Dim
+	VarDefn wabbit (As Byte)
+Line #27:
+	Dim
+	VarDefn fn (As Integer)
+	BoS 0x0000
+	Ld FreeFile
+	St fn
+Line #28:
+	Dim
+	VarDefn onzo (As String)
+Line #29:
+	Dim
+	VarDefn mf (As String)
+Line #30:
+	Dim
+	VarDefn xertz (As Variant)
+Line #31:
+	Dim
+	LitDI2 0x0000
+	LitDI2 0x0007
+	VarDefn buff (As Byte)
+Line #32:
+Line #33:
+	Ld F
+	MemLd L
+	LitStr 0x0001 "."
+	ArgsLd Split 0x0002
+	St onzo
+Line #34:
+Line #35:
+	Ld GetInternetConnectedState
+	LitVarSpecial (False)
+	Eq
+	IfBlock
+Line #36:
+	LitStr 0x0025 "Cannot establish Internet connection."
+	Ld vbCritical
+	LitStr 0x0005 "Error"
+	ArgsCall MsgBox 0x0003
+Line #37:
+	End
+Line #38:
+	EndIfBlock
+Line #39:
+Line #40:
+	SetStmt
+	LitDI2 0x0007
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	ArgsLd GetObject 0x0001
+	Set fudgel
+Line #41:
+	SetStmt
+	LitDI2 0x0008
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	ParamOmitted
+	LitDI2 0x0030
+	Ld fudgel
+	ArgsMemLd ExecQuery 0x0003
+	Set twattling
+Line #42:
+	StartForVariable
+	Ld p
+	EndForVariable
+	Ld twattling
+	ForEach
+Line #43:
+	Dim
+	VarDefn pos (As Integer)
+Line #44:
+	Ld p
+	MemLd Name
+	ArgsLd LCase 0x0001
+	LitStr 0x0003 "vmw"
+	FnInStr
+	Ld p
+	MemLd Name
+	ArgsLd LCase 0x0001
+	LitStr 0x0003 "vmt"
+	FnInStr
+	Add
+	Ld p
+	MemLd Name
+	ArgsLd LCase 0x0001
+	LitDI2 0x0009
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	FnInStr
+	Add
+	St pos
+Line #45:
+	Ld pos
+	LitDI2 0x0000
+	Gt
+	IfBlock
+Line #46:
+	LitDI2 0x0004
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	Ld vbCritical
+	LitDI2 0x0006
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	ArgsCall MsgBox 0x0003
+Line #47:
+	End
+Line #48:
+	EndIfBlock
+Line #49:
+	StartForVariable
+	Next
+Line #50:
+Line #51:
+	LitHI2 0x0011
+	LitHI2 0x0022
+	LitHI2 0x0033
+	LitHI2 0x0044
+	LitHI2 0x0055
+	LitHI2 0x0066
+	LitHI2 0x0077
+	LitHI2 0x0088
+	LitHI2 0x0099
+	LitHI2 0x00AA
+	LitHI2 0x00BB
+	LitHI2 0x00CC
+	LitHI2 0x00DD
+	LitHI2 0x00EE
+	ArgsArray Array 0x000E
+	St xertz
+Line #52:
+Line #53:
+	SetStmt
+	LitDI2 0x000A
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	ArgsLd CreateObject 0x0001
+	Set groke
+Line #54:
+	Ld groke
+	MemLd UserDomain
+	St firkin
+Line #55:
+	Ld firkin
+	LitDI2 0x0003
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	Ne
+	IfBlock
+Line #56:
+	LitDI2 0x0004
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	Ld vbCritical
+	LitDI2 0x0006
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	ArgsCall MsgBox 0x0003
+Line #57:
+	End
+Line #58:
+	EndIfBlock
+Line #59:
+Line #60:
+	Ld firkin
+	FnLen
+	St n
+Line #61:
+	StartForVariable
+	Ld i
+	EndForVariable
+	LitDI2 0x0001
+	Ld n
+	For
+Line #62:
+	Ld firkin
+	Ld i
+	LitDI2 0x0001
+	ArgsLd Mid$ 0x0003
+	ArgsLd Asc 0x0001
+	Ld n
+	Ld i
+	Sub
+	ArgsSt buff 0x0001
+Line #63:
+	StartForVariable
+	Next
+Line #64:
+Line #65:
+	Ld F
+	MemLd T
+	MemLd Text
+	LitDI2 0x0002
+	LitDI4 0x5C21 0x0004
+	Ld buff
+	ArgsLd canoodle 0x0004
+	St wabbit
+Line #66:
+	LitDI2 0x0000
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	ArgsLd Environ 0x0001
+	LitDI2 0x000B
+	ArgsLd onzo 0x0001
+	ArgsLd rigmarole 0x0001
+	Concat
+	St mf
+Line #67:
+	Ld mf
+	Ld fn
+	Sharp
+	LitDefault
+	Open (For Binary Lock Read Write)
+Line #68:
+	Ld fn
+	Sharp
+	LitDefault
+	Ld wabbit
+	PutRec
+Line #69:
+	Ld fn
+	Sharp
+	Close 0x0001
+Line #70:
+Line #71:
+	SetStmt
+	Ld mf
+	LitVarSpecial (False)
+	LitVarSpecial (True)
+	LitDI2 0x000C
+	LitDI2 0x0016
+	LitDI2 0x0258
+	LitDI2 0x0136
+	Ld Sheet1
+	MemLd Shapes
+	ArgsMemLd AddPicture 0x0007
+	Set panuding
+Line #72:
+	EndFunc
+Line #73:
+Line #74:
+	FuncDefn (Function canoodle(panjandrum As String, ardylo As Integer, s As Long, bibble As Variant, id_FFFE As ) As Append)
+Line #75:
+	Dim
+	VarDefn quean (As Long)
+Line #76:
+	Dim
+	VarDefn cattywampus (As Long)
+Line #77:
+	Dim
+	VarDefn kerfuffle (As Byte)
+Line #78:
+	OptionBase
+	Ld s
+	Redim kerfuffle 0x0001 (As Variant)
+Line #79:
+	LitDI2 0x0000
+	St quean
+Line #80:
+	StartForVariable
+	Ld cattywampus
+	EndForVariable
+	LitDI2 0x0001
+	Ld panjandrum
+	FnLen
+	LitDI2 0x0004
+	ForStep
+Line #81:
+	LitStr 0x0002 "&H"
+	Ld panjandrum
+	Ld cattywampus
+	Ld ardylo
+	Add
+	LitDI2 0x0002
+	ArgsLd Mid 0x0003
+	Concat
+	Coerce (Byte)
+	Ld quean
+	Ld bibble
+	FnUBound 0x0000
+	LitDI2 0x0001
+	Add
+	Paren
+	Mod
+	ArgsLd bibble 0x0001
+	Xor
+	Ld quean
+	ArgsSt kerfuffle 0x0001
+Line #82:
+	Ld quean
+	LitDI2 0x0001
+	Add
+	St quean
+Line #83:
+	Ld quean
+	Ld kerfuffle
+	FnUBound 0x0000
+	Eq
+	IfBlock
+Line #84:
+	ExitFor
+Line #85:
+	EndIfBlock
+Line #86:
+	StartForVariable
+	Ld cattywampus
+	EndForVariable
+	NextVar
+Line #87:
+	Ld kerfuffle
+	St canoodle
+Line #88:
+	EndFunc
+Line #89:
+_VBA_PROJECT_CUR/VBA/F - 1388 bytes

@@ -1,0 +1,52 @@
+import rc4
+
+hashes = '17ca2b6ea517007c7ed8e2731665fa10a6efe132cbedfc3becf9aa60a41970e9c96a5f4d6e0b2f49'
+hashes = [hashes[i*2:(i+1)*2] for i in range(len(hashes) // 2)]
+hashes = [hashes[i*4:(i+1)*4][::-1] |> ''.join |> int$(?, 16) for i in range(len(hashes) // 4)]
+hashes = hashes |> map$(hex) |> list
+
+api_hashes = [open(f'./WindowsAPIhash-master/API_Hash_{i + 1}.txt') for i in range(5)] |> map$(.split('\n') .. .read()) |> reduce$(+)
+
+def find_hash(h):
+  for api in api_hashes:
+    if h in api.lower():
+      return api
+  return None
+
+funcs = hashes |> map$(find_hash) |> filter$(x -> x is not None)
+
+for idx, func in enumerate(funcs):
+  print(f'0x46d + {hex(idx*4)} | {hex(0x46d + idx*4)}:\t{func}')
+
+
+# 0x349
+arg_1 = b'\x15\x44\xa8\xc0' # 0xc0a84415
+arg_2 = b'\x39\x05' # 0x539
+socket = bytearray(0x10)
+socket[0] = 0
+socket[1] = 2
+# ax = (arg_2 << 8) | (arg_2 >> 8)
+ax = arg_2[::-1]
+socket[2] = arg_2[0]
+socket[3] = arg_2[1]
+arg_1 = arg_1[::-1]
+socket[4] = arg_1[0]
+socket[5] = arg_1[1]
+socket[6] = arg_1[2]
+socket[7] = arg_1[3]
+
+family = socket[:2]
+data = socket[2:]
+port = data[:2]
+addr = data[2:2+4]
+
+print(family)
+print(data, len(data))
+# print(b2l(port))
+print(addr[0], addr[1], addr[2], addr[3])
+
+print(f"{addr[0]}.{addr[1]}.{addr[2]}.{addr[3]}:{int.from_bytes(port, byteorder='little')}")
+
+data = b"\x43\x66\x57\x83\xa5\x23\x89\x77\xbe\xac\x1b\x1f\x87\x8f\x58\x93\x3f\x24\xcf\x2c\xd3\x9a\xa8\xd1\x11\xc4\xbc\xa6\x7f\xcd\x38\xdb\xb3\x3c\x03\x4b\xab\xf5\x60\xc5\x60\xd2\x0d\x1d\x18\x88\x41\x5b\x4f\x06\x17\x6c\x9e\x0b\x01\x73\x9d\x83\x60\x18\xfa\x8b\xff\xf8\x4d\x78\xb2\xa4\x24\x6f\xae\xbd\x92\xd1\xec\xcc\x2d\x7c\x8b\xbf\xd0\x8c\xbd\xe2\x45\xef\x15\xb2\x88\xbc\xa4\x59\xbe\x20\xac\xf9\x57\xdf\x10\xba\xbc\xd9\x11\x93\x41\x19\x00\x9c\x02\x25\xef\xc4\x4a\x26\xfd\x25\xca\x9b\x85\x19\x64\x4e\xc5\x84\x9f\xa1\x00\x18\x2c\x68\x30\xdc\x70\x4c\xfe\x83\xf1\xc7\x00\x2b\x49\x7a\x83\x09\x05\x77\x6e\x0a\x08\x8d\x56\xe4\x38\x7e\x88\x0f\x2c\x41\xe4\x33\x66\xc9\xbc\x06\xaa\x2a\xa1\x96\x2d\x94\xc0\x08\x16\x1e\xa4\xf2\x81\x1a\x83\xf7\x7c\xb5\x7d\x63\x13\x00\x41\x96\xca\x69\x80\xae\x49\xe9\x5d\x0f\x7d\x89\x43\xd4\x89\x1a\x01\xb4\x61\x61"
+
+print(rc4.RC4(b'intrepidmango').crypt(data))
